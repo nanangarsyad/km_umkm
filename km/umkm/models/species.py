@@ -1,5 +1,6 @@
 from django.db import models
 from umkm.models.profile import Profile
+from django.contrib.auth.models import User
 
 class Category(models.Model):
 	CAT_FOR = (('K', 'Knowledge'), ('P', 'Profile'))
@@ -22,7 +23,7 @@ class Type(models.Model):
 
 	title = models.CharField(max_length=200)
 	type_for = models.CharField(max_length = 1, choices = FOR_TYPE )
-	creator = models.ForeignKey(Profile)
+	creator = models.ForeignKey(User)
 
 	def __unicode__(self):
 		return self.title

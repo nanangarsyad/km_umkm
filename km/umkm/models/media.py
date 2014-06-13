@@ -1,12 +1,13 @@
 from django.db import models
 from umkm.models.species import *
 from umkm.models.profile import Profile
+from django.contrib.auth.models import User
 
 
 class Media(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
-	creator = models.ForeignKey(Profile)
+	creator = models.ForeignKey(User)
 	media_type = models.ForeignKey(Type)
 	shareable = models.BooleanField()
 

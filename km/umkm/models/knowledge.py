@@ -2,6 +2,7 @@ from django.db import models
 from umkm.models.species import *
 from umkm.models.media import *
 from umkm.models.profile import Profile
+from django.contrib.auth.models import User
 
 class Knowledge(models.Model):
 	POST_STATUS = (
@@ -18,7 +19,7 @@ class Knowledge(models.Model):
 	status = models.BooleanField()
 	post_type = models.CharField(max_length = 1, choices = POST_STATUS)
 	post_category = models.ForeignKey(Category)
-	creator = models.ForeignKey(Profile)
+	creator = models.ForeignKey(User)
 	tags = models.ManyToManyField(Tag)
 	files = models.ManyToManyField(Media, null = True, blank = True, default = None)
 	relationsip = models.ManyToManyField('self', through = 'Relationship', 
