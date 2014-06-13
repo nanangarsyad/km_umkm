@@ -1,29 +1,26 @@
-- model: umkm.Artikel
+- model: umkm.Article
   pk: 1
   fields:
     post_title: Membuat Basis Data Dalam Android
     post_content: Untuk membuat basisi data dalam android kita harus bisa pemrograman terlebih dahulu kalau tidak ya percuma
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 5
 
-- model: umkm.Artikel
+- model: umkm.Article
   pk: 2
   fields:
     post_title: Menggunakan Aplikasi Mobile Untuk Penjualan
     post_content: Aplikasi mobile dapat digunakan untuk penjualan barang. Kalau nggak percaya silahkan dicoba sendiri
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 4
 
-- model: umkm.Artikel
+- model: umkm.Article
   pk: 3
   fields:
     post_title: Membuat Bahan Makanan Berhasiat Tinggi
     post_content: Makanan yang dibuat sendiri seharusnya dikombinasikan secara baik sehingga hasilnya juga baik. Kalau dibuat orang lain itu mungkin hasilnya nggak terlalu baik. oke.
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 1
@@ -33,7 +30,6 @@
   fields:
     post_title: Pakaian Berbahan Serat Organik
     post_content: Kami membuat pakaian dari serat organik yang bisa dimakan dan cocok untuk dipakai kapan saja di mana saja.
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 2
@@ -43,7 +39,6 @@
   fields:
     post_title: Tanya Menjual Barang
     post_content: Bagaimana cara menjual barang yang tidak terpakai agar laku di pasaran.
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 2
@@ -53,7 +48,6 @@
   fields:
     post_title: Membuat Jagung yang Enak
     post_content: Hasil tanaman jagung saya kok nggak enak ya? Biar bisa enak caranya gimana ya?
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 2
@@ -63,7 +57,6 @@
   fields:
     post_title: Jual aja di toko bagus
     post_content: Kalau pengen jual barang yang tidak terpakai ya jual aja di toko bagus.
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 5
@@ -73,7 +66,6 @@
   fields:
     post_title: Jual ke temen sejawat
     post_content: Jual ke teman sejawat sambil dipaksa-paksa. Kalau masih nggak mau ya dirampok aja.
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 3
@@ -83,7 +75,6 @@
   fields:
     post_title: Nanam di Tanah Jangan di Genteng
     post_content: Kalau pengen enak nanamnya di tanah aja tho, jangan di genteng.
-    post_excerpt: -
     status: 1
     creator: 1
     post_category: 1
