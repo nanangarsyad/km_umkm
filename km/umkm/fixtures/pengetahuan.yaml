@@ -1,0 +1,21 @@
+- model: umkm.Artikel
+  pk: 1
+  fields:
+    post_title: Membuat Basis Data Dalam Android
+    post_content: Untuk membuat basisi data dalam android kita harus bisa pemrograman terlebih dahulu kalau tidak ya percuma
+    post_excerpt: -
+    status: 1
+    creator: 1
+    post_category: 5
+    post_type: 1
+
+- model: umkm.Artikel
+  pk: 1
+  fields:
+    post_title: Membuat Basis Data Dalam Android
+    post_content: Untuk membuat basisi data dalam android kita harus bisa pemrograman terlebih dahulu kalau tidak ya percuma
+    post_excerpt: -
+    status: 1
+    creator: 1
+    post_category: 5
+    post_type: 1

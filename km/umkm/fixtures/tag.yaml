@@ -1,0 +1,48 @@
+- model: umkm.Tag
+  pk: 1
+  fields:
+    tag_title: MS Word
+    description: -
+    tag_for: K
+
+- model: umkm.Tag
+  pk: 2
+  fields:
+    tag_title: PHP
+    description: -
+    tag_for: K
+
+- model: umkm.Tag
+  pk: 3
+  fields:
+    tag_title: Java
+    description: -
+    tag_for: K
+
+- model: umkm.Tag
+  pk: 4
+  fields:
+    tag_title: Makanan Olahan
+    description: -
+    tag_for: K
+
+- model: umkm.Tag
+  pk: 5
+  fields:
+    tag_title: Jeans
+    description: -
+    tag_for: K
+
+- model: umkm.Tag
+  pk: 6
+  fields:
+    tag_title: Cemilan
+    description: -
+    tag_for: K
+
+- model: umkm.Tag
+  pk: 7
+  fields:
+    tag_title: Jagung
+    description: -
+    tag_for: K

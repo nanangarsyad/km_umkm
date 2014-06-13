@@ -54,6 +54,45 @@ class Product(Knowledge):
 		self.post_type = Type.objects.get(title__exact = 'Produk')
 		super(Product, self).save(*args, **kwargs)
 
+class Question(Knowledge):
+	
+	class Meta:
+		proxy = True
+		verbose_name_plural = 'List Pertanyaan'
+		verbose_name = 'Pertanyaan'
+		app_label = 'umkm'
+
+	def save(self, *args, **kwargs):
+		self.post_type = Type.objects.get(title__exact = 'Pertanyaan')
+		super(Product, self).save(*args, **kwargs)
+
+	def numAnswer():
+		self.relationsip.filter(title = 'Menjawab').count()
+
+class Answer(Knowledge):
+	
+	class Meta:
+		proxy = True
+		verbose_name_plural = 'List Jawaban'
+		verbose_name = 'Jawaban'
+		app_label = 'umkm'
+
+	def save(self, *args, **kwargs):
+		self.post_type = Type.objects.get(title__exact = 'Jawaban')
+		super(Product, self).save(*args, **kwargs)
+
+class Comment(Knowledge):
+	
+	class Meta:
+		proxy = True
+		verbose_name_plural = 'List Komentar'
+		verbose_name = 'Komentar'
+		app_label = 'umkm'
+
+	def save(self, *args, **kwargs):
+		self.post_type = Type.objects.get(title__exact = 'Komentar')
+		super(Product, self).save(*args, **kwargs)
+
 class Relationship(models.Model):
 	from_knowledge = models.ForeignKey(Knowledge, related_name = 'from')
 	to_knowledge = models.ForeignKey(Knowledge, related_name = 'to')
@@ -61,4 +100,3 @@ class Relationship(models.Model):
 
 	class Meta:		
 		app_label = 'umkm'
-		

@@ -1,0 +1,44 @@
+- model: umkm.Category
+  pk: 1
+  fields:
+    name: Makanan
+    description: Kategori makanan yang ada
+    category_for: K
+
+- model: umkm.Category
+  pk: 2
+  fields:
+    name: Pakaian
+    description: Kategori pakaian yang tersedia
+    category_for: K
+
+- model: umkm.Category
+  pk: 3
+  fields:
+    name: Komputer
+    description: Kategori komputer sahaja
+    category_for: K
+
+- model: umkm.Category
+  pk: 4
+  fields:
+    name: Aplikasi Komputer
+    description: Kategori aplikasi komputer yang digunakan untuk bekerja
+    parent: 3
+    category_for: K
+
+- model: umkm.Category
+  pk: 5
+  fields:
+    name: Pemrograman
+    description: Kategori pemrograman perangkat lunak
+    parent: 3
+    category_for: K
+
+- model: umkm.Category
+  pk: 6
+  fields:
+    name: Celana
+    description: Kategori celana-celana yang tersedia
+    parent: 2
+    category_for: K

@@ -16,6 +16,9 @@ class ArticleAdmin(admin.ModelAdmin):
 	list_display = ['post_title', 'status', 'post_category']
 	exclude = ['post_type']
 
+class QuestionAdmin(admin.ModelAdmin):
+	list_display = ['post_category', 'status', 'post_category']
+
 admin.site.register(Type, TypeAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)

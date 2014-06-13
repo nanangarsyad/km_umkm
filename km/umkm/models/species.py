@@ -2,7 +2,7 @@ from django.db import models
 from umkm.models.profile import Profile
 
 class Category(models.Model):
-	CAT_FOR = (('1', 'Knowledge'), ('2', 'Profile'))
+	CAT_FOR = (('K', 'Knowledge'), ('P', 'Profile'))
 
 	name = models.CharField(max_length=200)	
 	description = models.TextField()
@@ -18,7 +18,7 @@ class Category(models.Model):
 		app_label = 'umkm'
 
 class Type(models.Model):
-	FOR_TYPE = (('K', 'Knowledge'), ('R', 'Relation'), ('M', 'Media'))
+	FOR_TYPE = (('K', 'Knowledge'), ('R', 'Relation'), ('M', 'Media'), ('P', 'Profile'))
 
 	title = models.CharField(max_length=200)
 	type_for = models.CharField(max_length = 1, choices = FOR_TYPE )
@@ -33,7 +33,7 @@ class Type(models.Model):
 		app_label = 'umkm'
 
 class Tag(models.Model):
-	TAG_FOR = (('1', 'Knowledge'), ('2', 'Profile'))
+	TAG_FOR = (('K', 'Knowledge'), ('P', 'Profile'))
 
 	tag_title = models.CharField(max_length=200)
 	description = models.TextField()
