@@ -39,6 +39,9 @@ class Article(Knowledge):
 		verbose_name = 'Artikel'
 		app_label = 'umkm'
 
+	def display_record(self):
+		return self.filter(post_type = 1)
+
 	def save(self, *args, **kwargs):
 		self.post_type = Type.objects.get(title__exact = 'Artikel')
 		super(Article, self).save(*args, **kwargs)
