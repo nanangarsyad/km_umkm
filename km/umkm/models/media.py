@@ -5,16 +5,16 @@ from django.contrib.auth.models import User
 
 
 class Media(models.Model):
-	title = models.CharField(max_length=200)
-	description = models.TextField()
-	creator = models.ForeignKey(User)
-	media_type = models.ForeignKey(Type)
-	shareable = models.BooleanField()
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    creator = models.ForeignKey(User)
+    media_type = models.ForeignKey(Type)
+    shareable = models.BooleanField()
 
-	def __unicode__(self):
-		return self.title
+    def __unicode__(self):
+        return self.title
 
-	class Meta:		
-		verbose_name_plural = 'List Media'
-		verbose_name = 'Media'
-		app_label = 'umkm'
+    class Meta:
+        verbose_name_plural = 'List Media'
+        verbose_name = 'Media'
+        app_label = 'umkm'

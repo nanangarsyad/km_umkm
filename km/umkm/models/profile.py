@@ -2,22 +2,23 @@ from django.db import models
 from django.contrib.auth.models import User
 from umkm.models.species import *
 
+
 class Profile(models.Model):
-	USER_TYPES = (
-			('1', 'Administrator'),
-			('2', 'UMKM'),
-			('3', 'Researcher'),
-			('4', 'Lainnya'),
-		)
+    USER_TYPES = (
+    ('1', 'Administrator'),
+    ('2', 'UMKM'),
+    ('3', 'Researcher'),
+    ('4', 'Lainnya'),
+    )
 
-	user = models.OneToOneField(User)
-	user_type = models.CharField(max_length = 1, choices = USER_TYPES)
-	address = models.CharField(max_length=200)
-	instance_name = models.CharField(max_length=200)
-	instance_desc = models.TextField()
-	# category = models.ForeignKey(Category)
+    user = models.OneToOneField(User)
+    user_type = models.CharField(max_length=1, choices=USER_TYPES)
+    address = models.CharField(max_length=200)
+    instance_name = models.CharField(max_length=200)
+    instance_desc = models.TextField()
+    # category = models.ForeignKey(Category)
 
-	class Meta:
-		verbose_name_plural = 'List Profil'
-		verbose_name = 'Profil UMKM'
-		app_label = 'umkm'
+    class Meta:
+        verbose_name_plural = 'List Profil'
+        verbose_name = 'Profil UMKM'
+        app_label = 'umkm'

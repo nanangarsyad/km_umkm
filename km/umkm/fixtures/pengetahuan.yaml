@@ -5,6 +5,7 @@
     post_content: Untuk membuat basisi data dalam android kita harus bisa pemrograman terlebih dahulu kalau tidak ya percuma
     status: 1
     creator: 1
+    post_type: 1
     post_category: 5
 
 - model: umkm.Article
@@ -14,6 +15,7 @@
     post_content: Aplikasi mobile dapat digunakan untuk penjualan barang. Kalau nggak percaya silahkan dicoba sendiri
     status: 1
     creator: 1
+    post_type: 1
     post_category: 4
 
 - model: umkm.Article
@@ -23,6 +25,7 @@
     post_content: Makanan yang dibuat sendiri seharusnya dikombinasikan secara baik sehingga hasilnya juga baik. Kalau dibuat orang lain itu mungkin hasilnya nggak terlalu baik. oke.
     status: 1
     creator: 1
+    post_type: 1
     post_category: 1
 
 - model: umkm.Product
@@ -32,6 +35,7 @@
     post_content: Kami membuat pakaian dari serat organik yang bisa dimakan dan cocok untuk dipakai kapan saja di mana saja.
     status: 1
     creator: 1
+    post_type: 5
     post_category: 2
 
 - model: umkm.Question
@@ -41,6 +45,7 @@
     post_content: Bagaimana cara menjual barang yang tidak terpakai agar laku di pasaran.
     status: 1
     creator: 1
+    post_type: 2
     post_category: 2
 
 - model: umkm.Question
@@ -50,6 +55,7 @@
     post_content: Hasil tanaman jagung saya kok nggak enak ya? Biar bisa enak caranya gimana ya?
     status: 1
     creator: 1
+    post_type: 2
     post_category: 2
 
 - model: umkm.Answer
@@ -59,6 +65,7 @@
     post_content: Kalau pengen jual barang yang tidak terpakai ya jual aja di toko bagus.
     status: 1
     creator: 1
+    post_type: 3
     post_category: 5
 
 - model: umkm.Answer
@@ -68,6 +75,7 @@
     post_content: Jual ke teman sejawat sambil dipaksa-paksa. Kalau masih nggak mau ya dirampok aja.
     status: 1
     creator: 1
+    post_type: 3
     post_category: 3
 
 - model: umkm.Answer
@@ -77,6 +85,7 @@
     post_content: Kalau pengen enak nanamnya di tanah aja tho, jangan di genteng.
     status: 1
     creator: 1
+    post_type: 3
     post_category: 1
 
 - model: umkm.Relationship
