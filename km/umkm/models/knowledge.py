@@ -17,8 +17,8 @@ class Knowledge(models.Model):
     post_title = models.CharField(max_length=200)
     post_content = models.TextField()
     post_excerpt = models.TextField()
-    status = models.BooleanField()
-    post_type = models.CharField(max_length=1, choices=POST_STATUS)
+    status = models.CharField(max_length=1, choices=POST_STATUS)
+    post_type = models.ForeignKey(Type)
     post_category = models.ForeignKey(Category)
     creator = models.ForeignKey(User)
     tags = models.ManyToManyField(Tag)
@@ -54,6 +54,11 @@ class Article(Knowledge):
     def save(self, *args, **kwargs):
         self.post_type = Type.objects.get(title__exact='Artikel')
         super(Article, self).save(*args, **kwargs)
+
+    def num_comment(self):
+        return len(list(Knowledge.objects.raw("""select * from umkm_knowledge k 
+                        join umkm_relationship r on (k.id = r.to_knowledge_id) 
+                        where r.relation_type_id = 7 and k.id = %s""", [self.id])))
 
 
 class ProductManager(models.Manager):
@@ -93,8 +98,10 @@ class Question(Knowledge):
         self.post_type = Type.objects.get(title__exact='Pertanyaan')
         super(Product, self).save(*args, **kwargs)
 
-    # def num_answer(self):
-    #     self.objects.filter(relationship)
+    def num_answer(self):
+        return len(list(Knowledge.objects.raw("""select * from umkm_knowledge k 
+                        join umkm_relationship r on (k.id = r.to_knowledge_id) 
+                        where r.relation_type_id = 6 and k.id = %s""", [self.id]))) 
 
     objects = QuestManager()
 
