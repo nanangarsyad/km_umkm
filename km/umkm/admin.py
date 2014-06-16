@@ -21,8 +21,16 @@ class ArticleAdmin(admin.ModelAdmin):
     exclude = ['post_type']
 
 
+class AnswerInline(admin.StackedInline):
+		model = Relationship
+		extra = 1
+		fk_name = 'to_knowledge'
+
+
 class QuestionAdmin(admin.ModelAdmin):
     list_display = ['post_title', 'status', 'post_category', 'num_answer']
+    inlines = [AnswerInline]
+
 
 class TrainingAdmin(admin.ModelAdmin):
 	list_display = ['topic', 'start_date', 'end_date', 'venue', 'organizer', 'training_type']
@@ -33,4 +41,5 @@ admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Question, QuestionAdmin)
+admin.site.register(Relationship)
 admin.site.register(Training, TrainingAdmin)
