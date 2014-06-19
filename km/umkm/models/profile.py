@@ -1,6 +1,5 @@
-from django.db import models
-from django.contrib.auth.models import User
 from umkm.models.species import *
+from django.contrib.auth.models import User
 
 
 class Profile(models.Model):
@@ -21,4 +20,20 @@ class Profile(models.Model):
     class Meta:
         verbose_name_plural = 'Profil'
         verbose_name = 'Profil UMKM'
+        app_label = 'umkm'
+
+
+class Product(models.Model):
+    PRODUCT_TYPES = (('P', 'Published'), ('D', 'Draft'))
+
+    name = models.CharField(max_length=200)
+    description = models.TextField()
+    excerpt = models.TextField()
+    status = models.CharField(max_length=1, choices=PRODUCT_TYPES)
+    owner = models.ForeignKey(Profile)
+    category = models.ForeignKey(Category)
+
+    class Meta:
+        verbose_name_plural = 'Produk'
+        verbose_name = 'Produk'
         app_label = 'umkm'

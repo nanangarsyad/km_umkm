@@ -1,5 +1,4 @@
 from django.db import models
-from umkm.models.profile import Profile
 from django.contrib.auth.models import User
 
 
@@ -20,20 +19,20 @@ class Category(models.Model):
         app_label = 'umkm'
 
 
-class Type(models.Model):
-    FOR_TYPE = (('K', 'Knowledge'), ('R', 'Relation'), ('M', 'Media'), ('P', 'Profile'))
-
-    title = models.CharField(max_length=200)
-    type_for = models.CharField(max_length=1, choices=FOR_TYPE)
-    creator = models.ForeignKey(User)
-
-    def __unicode__(self):
-        return self.title
-
-    class Meta:
-        verbose_name_plural = 'Tipe'
-        verbose_name = 'Tipe'
-        app_label = 'umkm'
+# class Type(models.Model):
+#     FOR_TYPE = (('K', 'Knowledge'), ('R', 'Relation'), ('M', 'Media'), ('P', 'Profile'))
+#
+#     title = models.CharField(max_length=200)
+#     type_for = models.CharField(max_length=1, choices=FOR_TYPE)
+#     creator = models.ForeignKey(User)
+#
+#     def __unicode__(self):
+#         return self.title
+#
+#     class Meta:
+#         verbose_name_plural = 'Tipe'
+#         verbose_name = 'Tipe'
+#         app_label = 'umkm'
 
 
 class Tag(models.Model):

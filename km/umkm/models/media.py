@@ -8,7 +8,7 @@ class Media(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     creator = models.ForeignKey(User)
-    media_type = models.ForeignKey(Type)
+    # media_type = models.ForeignKey(Type)
     shareable = models.BooleanField()
 
     def __unicode__(self):
