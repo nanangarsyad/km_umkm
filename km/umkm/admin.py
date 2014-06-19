@@ -1,5 +1,7 @@
 from django.contrib import admin
 from umkm.models import *
+from django.forms import ModelForm
+from suit_redactor.widgets import RedactorWidget
 
 # Register your models here.
 
@@ -16,12 +18,29 @@ class TagAdmin(admin.ModelAdmin):
     list_display = ['tag_title', 'description']
 
 
+class KnowledgeForm(ModelForm):
+    class Meta:
+        widgets = {
+            'post_content': RedactorWidget(editor_options={'lang': 'en'}),
+            'post_excerpt': RedactorWidget(editor_options={
+                'buttons': ['html', '|', 'bold', 'italic']})
+        }
+
+
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ['post_title', 'status', 'post_category', 'num_comment']
     exclude = ['post_type']
+    form = KnowledgeForm
+    fieldsets = [
+        ('Post Content',
+         {
+             'classes': 'full-width',
+             'fields': ('post_title', 'post_content', 'post_excerpt', 'post_category')
+         })
+    ]
 
 
-class AnswerInline(admin.TabularInline):
+class AnswerInline(admin.StackedInline):
     model = Answer.relationsip.through
     extra = 1
     fk_name = 'to_knowledge'
@@ -31,6 +50,7 @@ class AnswerInline(admin.TabularInline):
 class QuestionAdmin(admin.ModelAdmin):
     list_display = ['post_title', 'status', 'post_category', 'num_answer']
     inlines = [AnswerInline]
+    form = KnowledgeForm
 
 
 class MediaAdmin(admin.ModelAdmin):

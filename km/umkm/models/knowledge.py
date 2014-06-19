@@ -1,7 +1,4 @@
-from django.db import models
-from umkm.models.species import *
 from umkm.models.media import *
-from umkm.models.profile import Profile
 from django.contrib.auth.models import User
 
 
@@ -40,9 +37,10 @@ class ArticleManager(models.Manager):
 
 
 class Article(Knowledge):
+
     class Meta:
         proxy = True
-        verbose_name_plural = 'List Artikel'
+        verbose_name_plural = 'Artikel'
         verbose_name = 'Artikel'
         app_label = 'umkm'
 
@@ -70,7 +68,7 @@ class ProductManager(models.Manager):
 class Product(Knowledge):
     class Meta:
         proxy = True
-        verbose_name_plural = 'List Produk'
+        verbose_name_plural = 'Produk'
         verbose_name = 'Produk'
         app_label = 'umkm'
 
@@ -88,9 +86,15 @@ class QuestManager(models.Manager):
 
 
 class Question(Knowledge):
+    POST_STATUS = (
+        ('T', 'Terjawab'),
+        ('B', 'Belum Terjawab'),
+        ('C', 'Batal Bertanya'),
+    ) # userless
+
     class Meta:
         proxy = True
-        verbose_name_plural = 'List Pertanyaan'
+        verbose_name_plural = 'Pertanyaan'
         verbose_name = 'Pertanyaan'
         app_label = 'umkm'
 
@@ -113,9 +117,10 @@ class AnswerManager(models.Manager):
 
 
 class Answer(Knowledge):
+
     class Meta:
         proxy = True
-        verbose_name_plural = 'List Jawaban'
+        verbose_name_plural = 'Jawaban'
         verbose_name = 'Jawaban'
         app_label = 'umkm'
 
@@ -135,7 +140,7 @@ class CommentManager(models.Manager):
 class Comment(Knowledge):
     class Meta:
         proxy = True
-        verbose_name_plural = 'List Komentar'
+        verbose_name_plural = 'Komentar'
         verbose_name = 'Komentar'
         app_label = 'umkm'
 

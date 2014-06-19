@@ -19,6 +19,6 @@ class Profile(models.Model):
     # category = models.ForeignKey(Category)
 
     class Meta:
-        verbose_name_plural = 'List Profil'
+        verbose_name_plural = 'Profil'
         verbose_name = 'Profil UMKM'
         app_label = 'umkm'

@@ -15,7 +15,7 @@ class Category(models.Model):
         return self.name
 
     class Meta:
-        verbose_name_plural = 'List Kategori'
+        verbose_name_plural = 'Kategori'
         verbose_name = 'Kategori'
         app_label = 'umkm'
 
@@ -31,7 +31,7 @@ class Type(models.Model):
         return self.title
 
     class Meta:
-        verbose_name_plural = 'List Tipe'
+        verbose_name_plural = 'Tipe'
         verbose_name = 'Tipe'
         app_label = 'umkm'
 
@@ -47,6 +47,6 @@ class Tag(models.Model):
         return self.tag_title
 
     class Meta:
-        verbose_name_plural = 'List Label'
+        verbose_name_plural = 'Label'
         verbose_name = 'Label'
         app_label = 'umkm'

@@ -17,6 +17,6 @@ class Training(models.Model):
         return self.topic
 
     class Meta:
-        verbose_name_plural = 'List Pelatihan'
+        verbose_name_plural = 'Pelatihan'
         verbose_name = 'Pelatihan'
         app_label = 'umkm'

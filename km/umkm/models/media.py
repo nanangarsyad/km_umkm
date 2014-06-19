@@ -15,6 +15,6 @@ class Media(models.Model):
         return self.title
 
     class Meta:
-        verbose_name_plural = 'List Media'
+        verbose_name_plural = 'Gambar & File'
         verbose_name = 'Media'
         app_label = 'umkm'
