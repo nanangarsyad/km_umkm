@@ -35,17 +35,18 @@ class Article(models.Model):
         verbose_name = 'Artikel'
         app_label = 'umkm'
 
-    # objects = ArticleManager()
+    def numOfArticle(self):
+        return self.objects.all().count()
 
-    def display_record(self):
-        return self.filter(post_type=1)
+    def numOfComments(self):
+        return Comment.objects.filter(article=self).count()
+
+
+    # objects = ArticleManager()
 
     # def save(self, *args, **kwargs):
     #     self.post_type = Type.objects.get(title__exact='Artikel')
     #     super(Article, self).save(*args, **kwargs)
-
-    def num_comment(self):
-        return self.objects.count()
 
         # return len(list(Knowledge.objects.raw("""select * from umkm_knowledge k
         #                 join umkm_relationship r on (k.id = r.to_knowledge_id)

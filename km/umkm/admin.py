@@ -3,12 +3,6 @@ from umkm.models import *
 from django.forms import ModelForm
 from suit_redactor.widgets import RedactorWidget
 
-# Register your models here.
-
-
-# class TypeAdmin(admin.ModelAdmin):
-# list_display = ['title', 'type_for', 'creator']
-
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'description', 'parent']
@@ -33,7 +27,7 @@ class CommentInline(admin.StackedInline):
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ['title', 'status', 'category', 'num_comment']
+    list_display = ['title', 'status', 'category', 'numOfComments']
     exclude = ['post_type']
     form = KnowledgeForm
     fieldsets = [
@@ -43,6 +37,10 @@ class ArticleAdmin(admin.ModelAdmin):
              'fields': ('title', 'content', 'excerpt', 'category')
          })
     ]
+
+    # def save_model(self, request, obj, form, change):
+    #     obj.creator = request.user
+    #     obj.save()
 
 
 class AnswerInline(admin.StackedInline):
