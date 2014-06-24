@@ -22,16 +22,13 @@ class Article(models.Model):
     content = models.TextField()
     excerpt = models.TextField()
     status = models.CharField(max_length=1, choices=POST_STATUS)
-    # type = models.ForeignKey(Type)
     category = models.ForeignKey(Category)
     creator = models.ForeignKey(User)
     tags = models.ManyToManyField(Tag)
     files = models.ManyToManyField(Media, null=True, blank=True, default=None)
-    # relationsip = models.ManyToManyField('self', through='Relationship',
-    #                                      symmetrical=False, related_name='related_to')
 
     class Meta:
-        verbose_name_plural = 'Artikel'
+        verbose_name_plural = 'Manajer Artikel'
         verbose_name = 'Artikel'
         app_label = 'umkm'
 
@@ -40,17 +37,6 @@ class Article(models.Model):
 
     def numOfComments(self):
         return Comment.objects.filter(article=self).count()
-
-
-    # objects = ArticleManager()
-
-    # def save(self, *args, **kwargs):
-    #     self.post_type = Type.objects.get(title__exact='Artikel')
-    #     super(Article, self).save(*args, **kwargs)
-
-        # return len(list(Knowledge.objects.raw("""select * from umkm_knowledge k
-        #                 join umkm_relationship r on (k.id = r.to_knowledge_id)
-        #                 where r.relation_type_id = 7 and k.id = %s""", [self.id])))
 
 
 class Question(models.Model):
@@ -70,16 +56,12 @@ class Question(models.Model):
     creator = models.ForeignKey(User)
 
     class Meta:
-        verbose_name_plural = 'Pertanyaan'
+        verbose_name_plural = 'Manajer Pertanyaan'
         verbose_name = 'Pertanyaan'
         app_label = 'umkm'
 
     def num_answer(self):
         return self.objects.count()
-
-            # len(list(Knowledge.objects.raw("""select * from umkm_knowledge k
-            #             join umkm_relationship r on (k.id = r.to_knowledge_id)
-            #             where r.relation_type_id = 6 and k.id = %s""", [self.id])))
 
 
 class Answer(models.Model):
@@ -98,18 +80,10 @@ class Answer(models.Model):
     owner = models.ForeignKey(User)
 
     class Meta:
-        verbose_name_plural = 'Jawaban'
+        verbose_name_plural = 'Manajer Jawaban'
         verbose_name = 'Jawaban'
         app_label = 'umkm'
 
-
-# class Relationship(models.Model):
-#     from_knowledge = models.ForeignKey(Knowledge, related_name='from')
-#     to_knowledge = models.ForeignKey(Knowledge, related_name='to')
-#     relation_type = models.ForeignKey(Type)
-#
-#     class Meta:
-#         app_label = 'umkm'
 
 class Comment(models.Model):
     COMMENT_TYPES = (

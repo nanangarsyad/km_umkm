@@ -38,10 +38,6 @@ class ArticleAdmin(admin.ModelAdmin):
          })
     ]
 
-    # def save_model(self, request, obj, form, change):
-    #     obj.creator = request.user
-    #     obj.save()
-
 
 class AnswerInline(admin.StackedInline):
     model = Answer
@@ -62,11 +58,22 @@ class TrainingAdmin(admin.ModelAdmin):
     list_display = ['topic', 'start_date', 'end_date', 'venue', 'organizer', 'training_type']
 
 
-# admin.site.register(Type, TypeAdmin)
+class ArticleReadOnly(admin.ModelAdmin):
+    list_display = ['title', 'status', 'category', 'numOfComments']
+    exclude = ['post_type', 'files']
+    readonly_fields = ['title', 'content', 'excerpt', 'category', 'tags']
+
+    def has_add_permission(self, request, obj=None):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Question, QuestionAdmin)
-# admin.site.register(Relationship)
 admin.site.register(Training, TrainingAdmin)
 admin.site.register(Media, MediaAdmin)
+admin.site.register(ArticleRO, ArticleReadOnly)
