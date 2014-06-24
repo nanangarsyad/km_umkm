@@ -32,10 +32,10 @@ class Article(models.Model):
         verbose_name = 'Artikel'
         app_label = 'umkm'
 
-    def numOfArticle(self):
+    def num_of_article(self):
         return self.objects.all().count()
 
-    def numOfComments(self):
+    def num_of_comments(self):
         return Comment.objects.filter(article=self).count()
 
 
