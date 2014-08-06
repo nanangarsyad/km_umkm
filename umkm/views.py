@@ -10,19 +10,35 @@ def login(req):
     title = 'Login Aplikasi Lab Inovasi UMKM';
     return render(req, 'sign-in.html', {'title': title})
 
+
 def dashboard(req):    
-    title = 'Dashboar Aplikasi KM-UMKM'
+    title = 'Dashboard Aplikasi KM-UMKM'
     return render(req, 'dashboard.html', {'title': title})
 
 
+def article_adm(req):
+    title = ''
+    return render(req, 'article-list.html', {'title': title})
+
+
+def article_show(req, quest_id):
+    title = ''
+    return render(req, 'article-show.html', {'title': title})
+
+
 def question_adm(req):
-    html = '<html><body><h1>List of Question</h1></body></html>'
-    return HttpResponse(html)
+    title = ''
+    return render(req, 'question-list.html', {'title': title})
 
 
 def question_edit(req, quest_id):
     html = '<html><body><h1>Question number '+quest_id+'</h1></body></html>'
     return HttpResponse(html)
+
+
+def question_show(req, quest_id):
+    title = ''
+    return render(req, 'question-show.html', {'title': title})
 
 
 class UserViewSet(viewsets.ModelViewSet):

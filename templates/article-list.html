@@ -1,0 +1,126 @@
+{% extends 'backend-base.html' %}
+{% load static %}
+{% block content_block %}
+<div class="row">
+    <div class="col-sm-9">
+        <h2>The Awesome Blog</h2>
+        <br>
+
+        <div id="blog-posts">
+            <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+                <div class="col-md-4">
+                    <a href="blog-item.html" class="thumb">
+                        <img src="{% static "images/blog/737034_24905666.jpg" %}" class="img-responsive hidden-xs"></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="post-summary">
+                        <p class="date">June 13th, 2013</p>
+                        <h2><a href="blog-item.html">Here is a title for the blog post</a></h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, id nec conceptam conclusion emque. Et eam tation option tation option. Utinam salutatus ex eum.
+                          Lorem ipsum dolor sit amet, id nec conceptam conclusion emque. Et eam tation option tation option.
+                        </p>
+                        <p><a class="btn btn-sm" href="blog-item.html">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post row sampleFilterOnefalse sampleFilterTwotrue">
+                <div class="col-md-4">
+                    <a href="blog-item.html" class="thumb">
+                        <img src="{% static "images/blog/789080_16753532.jpg" %}" class="img-responsive hidden-xs"></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="post-summary">
+                        <p class="date">June 13th, 2013</p>
+                        <h2><a href="blog-item.html">Here is a title for the blog post</a></h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, id nec conceptam conclusion emque. Et eam tation option tation option. Utinam salutatus ex eum.
+                          Lorem ipsum dolor sit amet, id nec conceptam conclusion emque. Et eam tation option tation option.
+                        </p>
+                        <p><a class="btn btn-sm" href="blog-item.html">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+                <div class="col-md-4">
+                    <a href="blog-item.html" class="thumb">
+                        <img src="{% static "images/blog/888272_30368604.jpg" %}"  class="img-responsive hidden-xs"></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="post-summary">
+                        <p class="date">June 13th, 2013</p>
+                        <h2><a href="blog-item.html">Here is a title for the blog post</a></h2>
+                        <p>
+                          Lorem ipsum dolor sit amet, id nec conceptam conclusion emque. Et eam tation option tation option. Utinam salutatus ex eum.
+                          Lorem ipsum dolor sit amet, id nec conceptam conclusion emque. Et eam tation option tation option.
+                        </p>
+                        <p><a class="btn btn-sm" href="blog-item.html">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div  style="text-align: center;">
+                <ul class="fancy pagination">
+                  <li><a href="#">&laquo;</a></li>
+                  <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-sm-3 sidebar well blog-sidebar">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+            </span>
+        </div>
+        <h3>Archives</h3>
+        <ul class="icons list-unstyled">
+            <li><a href="#"><i class="icon-angle-right"></i> June 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> May 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> April 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> March 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> February 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> January 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> December 2012</a></li>
+        </ul>
+
+        <h3>Categories</h3>
+        <p>
+        <a href="#"><span class="large label category label-info">Announcements</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <a href="#"><span class="large label category label-info">News</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Info</span></a>
+        <a href="#"><span class="large label category label-info">Fun Stuff</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <br>
+        <a href="#"><span class="large label category label-info">News</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <a href="#"><span class="large label category label-info">News</span></a>
+        <a href="#"><span class="large label category label-info">Announcements</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Info</span></a>
+        <a href="#"><span class="large label category label-info">Fun Stuff</span></a>
+        </p>
+
+        <h3>About Us</h3>
+        <p>
+            We are a small, web based company providing innovative ideas for people and businesses. Our award winning products help people solve problems that they deal with each and every day.
+        </p>
+
+    </div>
+</div>
+{% endblock %}

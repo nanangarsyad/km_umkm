@@ -1,0 +1,121 @@
+{% extends 'backend-base.html' %}
+{% load static %}
+{% block content_block %}
+<div class="row blog-post">
+    <div class="col-sm-9">
+        <h2>We are launching a new product</h2>
+        <p class="pull-right small">
+            <a href="#"><i class="icon-comments"></i> 8 Comments</a>
+        </p>
+        <p class="muted small">
+            January 14th, 2013
+        </p>
+        <a href="#">
+            <img class="img-responsive" src="{% static "images/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg" %}" alt="">
+        </a>
+
+        <h3>A new design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla varius adipiscing. Nam scelerisque hendrerit turpis ac bibendum. Sed leo elit, dictum vitae scelerisque a, hendrerit ut eros. Morbi et ligula enim, vel tempus eros. Nam posuere, eros at elementum auctor, diam metus gravida ligula, non sollicitudin lorem lorem in dolor. Nullam in consequat diam. Nam imperdiet orci eu velit aliquet id cursus ipsum ornare. Phasellus interdum varius augue, vel viverra nibh varius suscipit. Cras molestie sapien nec tellus feugiat lacinia. Nullam arcu ante, elementum vitae tincidunt quis, rhoncus sed libero. Nunc lacinia mauris diam, in convallis erat.</p>
+        <h3>Looking for users</h3>
+        <p>
+        In gravida enim et massa auctor placerat. Maecenas quis lorem sem. Phasellus eleifend mauris vehicula augue dapibus ultrices. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi varius sapien congue ligula hendrerit auctor. Nunc aliquet accumsan risus, id commodo purus porta quis. Nam cursus lectus in tellus malesuada malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque sollicitudin pretium sollicitudin. Praesent malesuada dapibus libero quis congue. Pellentesque sit amet mi at nisi varius sagittis eget vitae orci. Sed non sem in purus blandit tempus vulputate ut mi. Donec volutpat, felis non bibendum ultricies, erat lectus tempus lacus, at elementum sem elit ut lectus.</p>
+
+        <h2>Comments</h2>
+        <div class="comments">
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" style="width: 64px; height: 64px;" src="{% static "images/faces/4b.png" %}">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Ashley Jackson</h4>
+                <p>Cras sit amet nibh libero, in gravida nulla. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. <br><a href="#" class="small">Reply</a></p>
+              </div>
+            </div>
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" style="width: 64px; height: 64px;" src="{% static "images/faces/2a.png" %}">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <br><a href="#" style="font-size: .8em;">Reply</a></p>
+              </div>
+              <div class="media">
+                  <a class="pull-left" href="#">
+                        <img class="media-object" style="width: 64px; height: 64px;" src="{% static "images/faces/3a.png" %}">
+                  </a>
+                  <div class="media-body">
+                      <h4 class="media-heading">Media heading</h4>
+                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      <br><a href="#" style="font-size: .8em;">Reply</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <h3>Leave a comment</h3>
+          <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control col-md-12" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="text" class="form-control col-md-12" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control col-md-12" rows="8" name="message"></textarea>
+                </div>
+              <input type="submit" value="Post Reply" class="btn btn-primary" style="display: block;"></input>
+          </form>
+    </div>
+
+    <div class="col-sm-3 sidebar well blog-sidebar">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+            </span>
+        </div><!-- /input-group -->
+        <h3>Archives</h3>
+        <ul class="icons list-unstyled">
+            <li><a href="#"><i class="icon-angle-right"></i> June 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> May 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> April 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> March 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> February 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> January 2013</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i> December 2012</a></li>
+        </ul>
+
+
+        <h3>Categories</h3>
+        <p>
+        <a href="#"><span class="large label category label-info">Announcements</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <a href="#"><span class="large label category label-info">News</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Info</span></a>
+        <a href="#"><span class="large label category label-info">Fun Stuff</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <br>
+        <a href="#"><span class="large label category label-info">News</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Company</span></a>
+        <a href="#"><span class="large label category label-info">News</span></a>
+        <a href="#"><span class="large label category label-info">Announcements</span></a>
+        <a href="#"><span class="large label category label-info">Events</span></a>
+        <a href="#"><span class="large label category label-info">Info</span></a>
+        <a href="#"><span class="large label category label-info">Fun Stuff</span></a>
+        </p>
+
+        <h3>About Us</h3>
+        <p>
+            We are a small, web based company providing innovative ideas for people and businesses. Our award winning products help people solve problems that they deal with each and every day.
+        </p>
+    </div>
+
+</div>
+{% endblock %}
