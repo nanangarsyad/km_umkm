@@ -5,10 +5,10 @@ from umkm.utility import *
 
 class Profile(models.Model):
     USER_TYPES = (
-    ('1', 'Administrator'),
-    ('2', 'UMKM'),
-    ('3', 'Researcher'),
-    ('4', 'Lainnya'),
+        ('1', 'Administrator'),
+        ('2', 'UMKM'),
+        ('3', 'Researcher'),
+        ('4', 'Lainnya'),
     )
 
     user = models.OneToOneField(User)
@@ -22,6 +22,9 @@ class Profile(models.Model):
         verbose_name_plural = 'Profil'
         verbose_name = 'Profil UMKM'
         app_label = string_with_title("umkm", "Administrasi Pengetahuan")
+
+    def __unicode__(self):
+        return self.instance_name
 
 
 class Product(models.Model):

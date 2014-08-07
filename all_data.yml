@@ -1,0 +1,719 @@
+- fields: {app_label: admin, model: logentry, name: log entry}
+  model: contenttypes.contenttype
+  pk: 1
+- fields: {app_label: auth, model: permission, name: permission}
+  model: contenttypes.contenttype
+  pk: 2
+- fields: {app_label: auth, model: group, name: group}
+  model: contenttypes.contenttype
+  pk: 3
+- fields: {app_label: auth, model: user, name: user}
+  model: contenttypes.contenttype
+  pk: 4
+- fields: {app_label: contenttypes, model: contenttype, name: content type}
+  model: contenttypes.contenttype
+  pk: 5
+- fields: {app_label: sessions, model: session, name: session}
+  model: contenttypes.contenttype
+  pk: 6
+- fields: {app_label: umkm, model: profile, name: Profil UMKM}
+  model: contenttypes.contenttype
+  pk: 7
+- fields: {app_label: umkm, model: category, name: Kategori}
+  model: contenttypes.contenttype
+  pk: 8
+- fields: {app_label: umkm, model: tag, name: Label}
+  model: contenttypes.contenttype
+  pk: 10
+- fields: {app_label: umkm, model: media, name: Media}
+  model: contenttypes.contenttype
+  pk: 11
+- fields: {app_label: umkm, model: product, name: Produk}
+  model: contenttypes.contenttype
+  pk: 14
+- fields: {app_label: umkm, model: question, name: Pertanyaan}
+  model: contenttypes.contenttype
+  pk: 15
+- fields: {app_label: umkm, model: comment, name: Komentar}
+  model: contenttypes.contenttype
+  pk: 16
+- fields: {app_label: umkm, model: answer, name: Jawaban}
+  model: contenttypes.contenttype
+  pk: 17
+- fields: {app_label: umkm, model: article, name: Artikel}
+  model: contenttypes.contenttype
+  pk: 18
+- fields: {app_label: umkm, model: training, name: Pelatihan}
+  model: contenttypes.contenttype
+  pk: 19
+- fields: {expire_date: !!timestamp '2014-08-01 04:00:10+00:00', session_data: MTRjMTFjNjdiZjZiZDY2M2E2OTVkYzA3Y2FkMjhjZDNjMDViZTQ4NTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==}
+  model: sessions.session
+  pk: ceg5rwq57zt5o1jmcl3w2emrhtg63jh5
+- fields: {expire_date: !!timestamp '2014-06-27 09:40:45+00:00', session_data: MDBjZDQxNWIwMTcyMjZlMjU0ZDcyZGI0MDA2MWZhZTBkNzMxNDg2YTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0=}
+  model: sessions.session
+  pk: cs88e7kszjcold88sih9n7001120t5jm
+- fields: {expire_date: !!timestamp '2014-07-10 10:44:56+00:00', session_data: MDBjZDQxNWIwMTcyMjZlMjU0ZDcyZGI0MDA2MWZhZTBkNzMxNDg2YTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0=}
+  model: sessions.session
+  pk: j6gzzs6f4yhes6pxqcn4orjt88rh9iqz
+- fields: {expire_date: !!timestamp '2014-08-21 02:20:12+00:00', session_data: MDBjZDQxNWIwMTcyMjZlMjU0ZDcyZGI0MDA2MWZhZTBkNzMxNDg2YTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0=}
+  model: sessions.session
+  pk: r5x80fqneidxs7mkvqpzugwo5quu1s9a
+- fields: {description: Kategori makanan yang ada, parent: null, title: Makanan}
+  model: umkm.category
+  pk: 1
+- fields: {description: Kategori pakaian yang tersedia, parent: null, title: Pakaian}
+  model: umkm.category
+  pk: 2
+- fields: {description: Kategori komputer sahaja, parent: null, title: Komputer}
+  model: umkm.category
+  pk: 3
+- fields: {description: Kategori aplikasi komputer yang digunakan untuk bekerja, parent: 3,
+    title: Aplikasi Komputer}
+  model: umkm.category
+  pk: 4
+- fields: {description: Kategori pemrograman perangkat lunak, parent: 3, title: Pemrograman}
+  model: umkm.category
+  pk: 5
+- fields: {description: Kategori celana-celana yang tersedia, parent: 2, title: Celana}
+  model: umkm.category
+  pk: 6
+- fields: {description: Fotografi, parent: null, title: Fotografi}
+  model: umkm.category
+  pk: 7
+- fields: {description: Bisnismennn..., parent: null, title: Bisnis}
+  model: umkm.category
+  pk: 8
+- fields: {description: Penjualan Tiket, parent: 8, title: Ticketing}
+  model: umkm.category
+  pk: 9
+- fields: {description: '', title: MS Word}
+  model: umkm.tag
+  pk: 1
+- fields: {description: '', title: PHP}
+  model: umkm.tag
+  pk: 2
+- fields: {description: '', title: Java}
+  model: umkm.tag
+  pk: 3
+- fields: {description: '', title: Makanan Olahan}
+  model: umkm.tag
+  pk: 4
+- fields: {description: '', title: Jeans}
+  model: umkm.tag
+  pk: 5
+- fields: {description: '', title: Cemilan}
+  model: umkm.tag
+  pk: 6
+- fields: {description: '', title: Jagung}
+  model: umkm.tag
+  pk: 7
+- fields: {description: foto, title: foto}
+  model: umkm.tag
+  pk: 8
+- fields: {description: cetak, title: cetak}
+  model: umkm.tag
+  pk: 9
+- fields: {description: Bisnis Lah, title: Bisnis Umum}
+  model: umkm.tag
+  pk: 10
+- fields: {codename: add_logentry, content_type: 1, name: Can add log entry}
+  model: auth.permission
+  pk: 1
+- fields: {codename: change_logentry, content_type: 1, name: Can change log entry}
+  model: auth.permission
+  pk: 2
+- fields: {codename: delete_logentry, content_type: 1, name: Can delete log entry}
+  model: auth.permission
+  pk: 3
+- fields: {codename: add_permission, content_type: 2, name: Can add permission}
+  model: auth.permission
+  pk: 4
+- fields: {codename: change_permission, content_type: 2, name: Can change permission}
+  model: auth.permission
+  pk: 5
+- fields: {codename: delete_permission, content_type: 2, name: Can delete permission}
+  model: auth.permission
+  pk: 6
+- fields: {codename: add_group, content_type: 3, name: Can add group}
+  model: auth.permission
+  pk: 7
+- fields: {codename: change_group, content_type: 3, name: Can change group}
+  model: auth.permission
+  pk: 8
+- fields: {codename: delete_group, content_type: 3, name: Can delete group}
+  model: auth.permission
+  pk: 9
+- fields: {codename: add_user, content_type: 4, name: Can add user}
+  model: auth.permission
+  pk: 10
+- fields: {codename: change_user, content_type: 4, name: Can change user}
+  model: auth.permission
+  pk: 11
+- fields: {codename: delete_user, content_type: 4, name: Can delete user}
+  model: auth.permission
+  pk: 12
+- fields: {codename: add_contenttype, content_type: 5, name: Can add content type}
+  model: auth.permission
+  pk: 13
+- fields: {codename: change_contenttype, content_type: 5, name: Can change content
+      type}
+  model: auth.permission
+  pk: 14
+- fields: {codename: delete_contenttype, content_type: 5, name: Can delete content
+      type}
+  model: auth.permission
+  pk: 15
+- fields: {codename: add_session, content_type: 6, name: Can add session}
+  model: auth.permission
+  pk: 16
+- fields: {codename: change_session, content_type: 6, name: Can change session}
+  model: auth.permission
+  pk: 17
+- fields: {codename: delete_session, content_type: 6, name: Can delete session}
+  model: auth.permission
+  pk: 18
+- fields: {codename: add_profile, content_type: 7, name: Can add Profil UMKM}
+  model: auth.permission
+  pk: 19
+- fields: {codename: change_profile, content_type: 7, name: Can change Profil UMKM}
+  model: auth.permission
+  pk: 20
+- fields: {codename: delete_profile, content_type: 7, name: Can delete Profil UMKM}
+  model: auth.permission
+  pk: 21
+- fields: {codename: add_category, content_type: 8, name: Can add Kategori}
+  model: auth.permission
+  pk: 22
+- fields: {codename: change_category, content_type: 8, name: Can change Kategori}
+  model: auth.permission
+  pk: 23
+- fields: {codename: delete_category, content_type: 8, name: Can delete Kategori}
+  model: auth.permission
+  pk: 24
+- fields: {codename: add_tag, content_type: 10, name: Can add Label}
+  model: auth.permission
+  pk: 28
+- fields: {codename: change_tag, content_type: 10, name: Can change Label}
+  model: auth.permission
+  pk: 29
+- fields: {codename: delete_tag, content_type: 10, name: Can delete Label}
+  model: auth.permission
+  pk: 30
+- fields: {codename: add_media, content_type: 11, name: Can add Media}
+  model: auth.permission
+  pk: 31
+- fields: {codename: change_media, content_type: 11, name: Can change Media}
+  model: auth.permission
+  pk: 32
+- fields: {codename: delete_media, content_type: 11, name: Can delete Media}
+  model: auth.permission
+  pk: 33
+- fields: {codename: add_training, content_type: 19, name: Can add Pelatihan}
+  model: auth.permission
+  pk: 55
+- fields: {codename: change_training, content_type: 19, name: Can change Pelatihan}
+  model: auth.permission
+  pk: 56
+- fields: {codename: delete_training, content_type: 19, name: Can delete Pelatihan}
+  model: auth.permission
+  pk: 57
+- fields: {codename: add_product, content_type: 14, name: Can add Produk}
+  model: auth.permission
+  pk: 58
+- fields: {codename: change_product, content_type: 14, name: Can change Produk}
+  model: auth.permission
+  pk: 59
+- fields: {codename: delete_product, content_type: 14, name: Can delete Produk}
+  model: auth.permission
+  pk: 60
+- fields: {codename: add_article, content_type: 18, name: Can add Artikel}
+  model: auth.permission
+  pk: 61
+- fields: {codename: change_article, content_type: 18, name: Can change Artikel}
+  model: auth.permission
+  pk: 62
+- fields: {codename: delete_article, content_type: 18, name: Can delete Artikel}
+  model: auth.permission
+  pk: 63
+- fields: {codename: add_question, content_type: 15, name: Can add Pertanyaan}
+  model: auth.permission
+  pk: 64
+- fields: {codename: change_question, content_type: 15, name: Can change Pertanyaan}
+  model: auth.permission
+  pk: 65
+- fields: {codename: delete_question, content_type: 15, name: Can delete Pertanyaan}
+  model: auth.permission
+  pk: 66
+- fields: {codename: add_answer, content_type: 17, name: Can add Jawaban}
+  model: auth.permission
+  pk: 67
+- fields: {codename: change_answer, content_type: 17, name: Can change Jawaban}
+  model: auth.permission
+  pk: 68
+- fields: {codename: delete_answer, content_type: 17, name: Can delete Jawaban}
+  model: auth.permission
+  pk: 69
+- fields: {codename: add_comment, content_type: 16, name: Can add Komentar}
+  model: auth.permission
+  pk: 70
+- fields: {codename: change_comment, content_type: 16, name: Can change Komentar}
+  model: auth.permission
+  pk: 71
+- fields: {codename: delete_comment, content_type: 16, name: Can delete Komentar}
+  model: auth.permission
+  pk: 72
+- fields:
+    date_joined: 2014-06-13 08:30:10+00:00
+    email: elfaatta@gmail.com
+    first_name: ''
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2014-08-07 02:20:12+00:00
+    last_name: ''
+    password: pbkdf2_sha256$12000$Eg1OSLI410Mw$iQq6gw/l1c40UoYl/stBbSvpQBIzsSSDP82xIqZpCr0=
+    user_permissions: []
+    username: kaqfa
+  model: auth.user
+  pk: 1
+- fields:
+    category: 7
+    content: "<p>Menghadiri acara wisuda dapat ide usaha baru yang mungkin cocok buat\
+      \ \r\nanak kuliahan yaitu jasa foto atau fotografer,ide muncul melihat \r\n\
+      sekarang banyak mahasiswa yang memiliki kamera DSLR untuk mengisi hobi.\r\n\
+      <p>Nah bisa di manfaatkan juga jadi penghasian tambahan,pada waktu acara\r\n\
+      \ wisuda saya lihat para photografer jepret sana jepret sini tamu yang \r\n\
+      hadir nanti photo hasinya di print lalu di pajang -pajang banyak para \r\ntamu\
+      \ yang ingn mengambil photonya,kemaren saya di kenakan biaya \r\nRp.10.000/lembar\
+      \ photo padahal kalau di hitung-hitung biaya print 1 \r\nphoto hanya sekitar\
+      \ Rp.2000, lumayan kan\u2026?</p>\r\n<p>nah yang di butuhkan kamera SLR,skill\
+      \ photo,printer dan kertas foto.<br>\r\nrinciannya per event wisuda apabila\
+      \ baru memulai usaha ini</p>\r\n<p>Kamera (kalau belum punya) Rp.5.000.000<br>\r\
+      \nPrinter Rp.1.000.000<br>\r\nKertas Foto Rp.500.000<br>\r\nBiaya sewa lapak\
+      \ Rp.500.000<br>\r\nmakan dan sebagainya Rp.500.000</p>\r\n<p>estimasi modalnya\
+      \ Rp.7.500.000</p>\r\n<p>nah estimasi pemasukan per event dengan harga Rp.10.000/foto<br>\r\
+      \napabila laku 100 Foto dengan biaya produksi @Rp.2.000</p>\r\n<p>Rp.1.000.000-Rp.200.000=Rp.800.000</p>\r\
+      \n<p>selain acara wisuda, bisa juga buka jasa photo prewedding yang bayarannya\
+      \ juga lumayan dan marketnya sangat luas.</p></p>"
+    creator: 1
+    excerpt: "<p>Nah bisa di manfaatkan juga jadi penghasian tambahan,pada waktu acara\r\
+      \n wisuda saya lihat para photografer jepret sana jepret sini tamu yang \r\n\
+      hadir nanti photo hasinya di print lalu di pajang -pajang banyak para \r\ntamu\
+      \ yang ingn mengambil photonya,kemaren saya di kenakan biaya \r\nRp.10.000/lembar\
+      \ photo padahal kalau di hitung-hitung biaya print 1 \r\nphoto hanya sekitar\
+      \ Rp.2000, lumayan kan\u2026?<br></p>"
+    files: []
+    status: '1'
+    tags: [8, 9]
+    title: Peluang Usaha Fotografi dan Estimasi Pendapatannya
+  model: umkm.article
+  pk: 1
+- fields:
+    category: 8
+    content: "<p>Banyak yang mengatakan bahwa berwirausaha itu layaknya naik roller\
+      \ \r\ncoaster: Naik dan turun, melaju dalam berbagai kecepatan, baik cepat \r\
+      \nmaupun lambat, kadang di atas, kadang di bawah.\r\n<p>Dan saat berhenti, para\
+      \ wirausaha pucat pasi, merasa seolah-olah \r\ndarah mereka tercecer di sepanjang\
+      \ jalur roller coaster tersebut. \r\nMenegangkan, sekaligus mengasyikkan.</p>\r\
+      \n<p>Nah, saking asyik berkutat sebagai pengusaha, kerap kali Anda lebih \r\n\
+      sibuk mencari uang tanpa mempedulikan hal-hal yang seharusnya Anda mulai\r\n\
+      \ lakukan, atau bahkan yang menjadi hak Anda. Padahal, mumpung perusahaan\r\n\
+      \ masih kecil, inilah saat yang tepat bagi Anda untuk berdisiplin.</p>\r\n<p>Berikan\
+      \ upah kepada diri Anda. Nyatanya, para wirausaha cenderung \r\nmengabaikan\
+      \ apresiasi kepada diri sendiri dalam bentuk uang. Padahal, \r\nAnda sudah bekerja,\
+      \ maka Anda layak digaji. Tak usah dalam jumlah yang \r\nbombastis, namun paling\
+      \ tidak mencukupi kebutuhan dan gaya hidup Anda \r\nsebelum mulai berwirausaha.\
+      \ Targetkan kenaikan gaji Anda pula, sehingga \r\nAnda semakin bersemangat.\
+      \ Sebaliknya, pada saat perusahaan mendapatkan \r\npenghasilan yang besar, dengan\
+      \ sistem ini Anda tidak tergoda untuk \r\nmenghambur-hamburkannya karena tahu\
+      \ \u2018hak\u2019 Anda hanyalah sebesar gaji. \r\nYa, mungkin bisa sedikit Anda\
+      \ tambah dengan bonus. Tetapi intinya, \r\nmenggaji diri sendiri, sekalipun\
+      \ itu adalah perusahaan Anda, akan \r\nmendisiplinkan Anda sebagai wirausaha.</p>\r\
+      \n<p>Pisahkan uang Anda dan perusahaan. Yang kerap terjadi, para wirausaha\r\
+      \n lalai membuat sistem keuangan perusahaan. Pikir mereka, \u2018Toh, usahanya\
+      \ \r\nmasih kecil.\u2019 Padahal, memiliki sistem keuangan sejak perusahaan\
+      \ masih \r\nkecil akan menumbuhkan kedisiplinan di masa mendatang. Uang perusahaan\
+      \ \r\npun tak akan bercampur dengan uang pribadi, dan sebaliknya, sehingga \r\
+      \nkinerja perusahaan dapat terlihat dengan nyata. Kalaupun ada uang \r\npribadi\
+      \ yang terpakai perusahaan, buat catatan dan masukkan sebagai \r\nutang perusahaan.\
+      \ Sebaliknya, kalau Anda yang memakai uang perusahaan, \r\njuga buat catatan\
+      \ dan jadikan sebagai piutang perusahaan.</p>\r\n<p>Asetku, asetmu. Dalam memulai\
+      \ sebuah usaha, wajar saja kalau Anda \r\nmenggunakan aset pribadi sebagai pendukung\
+      \ awal. No problem. Tetapi yang\r\n Anda harus ingat adalah Anda harus selalu\
+      \ membuat catatan aset, berapa \r\npun kecilnya. Bila pada akhirnya Anda merelakan\
+      \ aset tersebut menjadi \r\nmilik perusahaan, lakukan pembaruan pada daftar\
+      \ aset.</p></p>"
+    creator: 1
+    excerpt: "<p>Banyak yang mengatakan bahwa berwirausaha itu layaknya naik roller\
+      \ \r\ncoaster: Naik dan turun, melaju dalam berbagai kecepatan, baik cepat \r\
+      \nmaupun lambat, kadang di atas, kadang di bawah.\r\n<p>Dan saat berhenti, para\
+      \ wirausaha pucat pasi, merasa seolah-olah \r\ndarah mereka tercecer di sepanjang\
+      \ jalur roller coaster tersebut. \r\nMenegangkan, sekaligus mengasyikkan.</p></p>"
+    files: []
+    status: '1'
+    tags: [10]
+    title: Tips Disiplin Dalam Berwirausaha
+  model: umkm.article
+  pk: 2
+- fields:
+    category: 1
+    content: "<p>Lahir dan dibesarkan di Lubuk Jantan, Lintau Buo, Kabupaten Tanah\
+      \ \r\nDatar, Sumatra Barat, Bustaman remaja memutuskan untuk merantau ke Jambi\r\
+      \n pada 1955. Bagi masyarakat Minang, pergi keluar dari kampung \r\nkelahirannya\
+      \ sudah menjadi tradisi. Di Jambi, Bustaman yang hanya \r\nlulusan kelas dua\
+      \ sekolah rakyat (setara SD) mengadu nasib dengan \r\nbekerja apa saja. Mulai\
+      \ dari bekerja di kebun karet, menjual koran, \r\nmencuci piring di sebuah rumah\
+      \ makan hingga menjadi pedagang asongan.\r\n<p>Pada 1970, Bustaman rupanya tertantang\
+      \ mengadu nasib di ibu kota \r\nJakarta. Padahal, ia baru saja dua tahun menikah\
+      \ dengan Fatimah dan \r\ndikaruniai seorang anak. \u201CSaya ikut dengan adik\
+      \ ipar di daerah Matraman,\r\n Jakarta Pusat,\u201D tutur Bustaman. Pilihan\
+      \ saat itu adalah berdagang rokok\r\n dengan menggunakan gerobak di pinggir\
+      \ jalan.</p>\r\n<p>Sebuah peristiwa yang melibatkan perseteruan antara etnis\
+      \ Minang \r\ndengan preman setempat pada 1975, membuat Bustaman terpaksa \r\n\
+      menyelamatkan diri dan keluarganya ke wilayah Pejompongan. \u201CPokoknya \r\
+      \nakibat peristiwa tersebut, kami suku Minang terancam keselamatannya,\u201D\
+      \ \r\ntutur Bustaman. Di Pejompongan, Bustaman tetap membuka warung rokok \r\
+      \nselama 24 jam dengan penghasilan harian sebesar Rp2.000. \u201CPadahal waktu\
+      \ \r\ndi Matraman penghasilan saya bisa Rp8.000,\u201D tambahnya.</p>\r\n<p>Kondisi\
+      \ tersebut membuat Bustaman berpikir untuk mencari penghasilan \r\ntambahan\
+      \ dengan berjualan makanan. Ia lalu mencari lahan pinggir jalan \r\ndi daerah\
+      \ Bendungan Hilir. \u201CSaya menyewa lapak seluas satu kali satu \r\nmeter\
+      \ di pinggir jalan seharga Rp3.000,\u201D kata Bustaman. \u201CMasalahnya, \r\
+      \nsaya tidak bisa memasak, tetapi berbekal pengalaman pernah bekerja di \r\n\
+      rumah makan, saya belajar.\u201D</p>\r\n<p>Di hari pertama, dagangannya hanya\
+      \ menghasilkan omset Rp425 dari \r\nmodal awal sebesar Rp13.000. \u201CSaya\
+      \ juga mengutang beras, minyak dan \r\nbeberapa kebutuhan lain kepada tetangga,\u201D\
+      \ kata Bustaman. \u201CSialnya, hasil\r\n dagangan itu ludes dibawa lari pembantu\
+      \ baru kami.\u201D</p>\r\n<p>Peristiwa itu tidak lekas membuat Bustaman putus\
+      \ asa. Ia tetap \r\nmenjalankan usaha warung kecilnya. Satu minggu kemudian\
+      \ ia berkenalan \r\ndengan pedagang masakan lain asal Solok, Sumatra, yang membuka\
+      \ warung di\r\n Bendungan Hilir. \u201CSaya coba masakannya ternyata enak,\u201D\
+      \ tutur Bustaman. \r\n\u201CSaya lalu memberanikan diri berkenalan dengan pemasaknya\
+      \ dan meminta \r\nresep masakan.\u201D</p>\r\n<p>Dengan menu baru tersebut,\
+      \ warung kecil Bustaman semakin kedatangan \r\nbanyak pelanggan. \u201CCobaan\
+      \ datang kembali saat terjadi penertiban \r\npedagang kaki lima oleh Satpol\
+      \ PP,\u201D cerita Bustaman. \u201CGerobak dagangan \r\nsaya diangkut.\u201D\
+      </p>\r\n<p>Bustaman kemudian membuka kembali warung di lahan yang sudah \r\n\
+      ditetapkan oleh pemerintah Jakarta. \u201CHarga beli lapaknya sebesar Rp750\
+      \ \r\nper lapak,\u201D kata Bustaman. \u201CSaya beli dua lapak di lahan yang\
+      \ saya \r\ninginkan.\u201D</p>\r\n<p>Karena satu orang hanya boleh memiliki\
+      \ satu lapak, maka Bustaman \r\nmeminjam nama pamannya untuk membeli lapak di\
+      \ sebelahnya. Warung \r\nBustaman terus ramai didatangi pelanggan. Sedang asyik\
+      \ menikmati untung,\r\n cobaan datang lagi. \u201CKali ini masalah datang dari\
+      \ tante saya karena \r\nmasalah utang piutang,\u201D ujar Bustaman. \u201CAwal\
+      \ membuka lapak baru saya \r\nmemang meminjam uang sebesar Rp15.000 kepada Tante,\
+      \ tetapi itu sudah \r\nsaya bayar,\u201D tutur Bustaman. Urusan sengketa ini\
+      \ bahkan melibatkan \r\nkepolisian. \u201CRupanya Tante ingin memiliki lapak\
+      \ saya karena dilihatnya \r\nlaris,\u201D lanjutnya.</p>\r\n<p>Bustaman akhirnya\
+      \ mengalah melepas lapak tersebut dan membeli lapak \r\nbaru tepat di seberang\
+      \ lapak lama. Tuhan memang Maha Adil, warung \r\nbarunya tetap lebih laris dari\
+      \ warung tantenya. \u201CBaru sebentar menikmati\r\n rezeki, musibah datang\
+      \ kembali,\u201D kata Bustaman. \u201CTempat tinggal saya di\r\n Pejompongan\
+      \ terbakar.\u201D</p>\r\n<p>Yang bisa diselamatkan Bustaman hanya istri, anak\
+      \ dan gerobak \r\ndagangnya. \u201CSaya lalu tinggal di rumah salah satu suplier\
+      \ bahan masakan \r\nsaya,\u201D tutur Bustaman. Ia mulai menyewa kios ketika\
+      \ Pasar Bendungan \r\nHilir dibangun pada 1974 dengan harga sewa Rp15.000. \u201C\
+      Tahun 1975 saya \r\nmembuka cabang di Roxy mas,\u201D katanya.</p>\r\n<p>Kini\
+      \ Bustaman sudah bisa menikmat hasil jerih payahnya. Rumah Makan \r\nPadang\
+      \ Sederhana miliknya sudah tersebar hampir di seluruh wilayah \r\nIndonesia\
+      \ hingga Malaysia, baik atas nama sendiri maupun investor \r\nmelalui sistem\
+      \ franchise.</p>\r\n<p>Ada cerita unik di balik nama \u201CRumah Makan Padang\
+      \ Sederhana\u201D yang \r\nmenjadi merek dagang Bustaman. \u201CNama itu saya\
+      \ ambil dari restoran di \r\nJambi tempat saya dahulu bekerja sebagai pencuci\
+      \ piring,\u201D cerita \r\nBustaman. \u201CIstri yang menyarankan karena memang\
+      \ namanya mudah diingat.\u201D</p>\r\n<p>Sekarang ini, banyak sekali rumah makan\
+      \ padang yang mengatasnamakan \r\nSederhana. Rumah Makan Padang Sederhana milik\
+      \ Bustaman adalah yang \r\nmemiliki logo rumah Gadang dengan tulisan SA. Apakah\
+      \ Anda salah satu \r\npelanggannya?</p></p>"
+    creator: 1
+    excerpt: "<p>Bustaman akhirnya mengalah melepas lapak tersebut dan membeli lapak\
+      \ \r\nbaru tepat di seberang lapak lama. Tuhan memang Maha Adil, warung \r\n\
+      barunya tetap lebih laris dari warung tantenya. \u201CBaru sebentar menikmati\r\
+      \n rezeki, musibah datang kembali,\u201D kata Bustaman. \u201CTempat tinggal\
+      \ saya di\r\n Pejompongan terbakar.\u201D<br></p>"
+    files: []
+    status: '1'
+    tags: [4]
+    title: Kisah Sukses H.Bustaman Membangun Rumah Makan Sederhana
+  model: umkm.article
+  pk: 3
+- fields:
+    category: 9
+    content: "<p><p>Pengguna transportasi udara meningkat pesat, murahnya harga tiket\
+      \ \r\nyang ditawarkan oleh maskapai penerbangan dan pendeknya waktu perjalanan\r\
+      \n menjadi alasan utama banyak masyarakat yang memilih moda transportasi \r\n\
+      ini.</p>\r\n<p>Berikut data statistik penerbangan di Indonesia</p><p>Berikut\
+      \ tips untuk memulai dan menjalankan usaha penjualan tike pesawat:</p>\r\n<p><strong>Modal</strong></p>\r\
+      \n<p>- Apabila anda mempunyai modal yang cukup besar diatas Rp.90 Juta \r\n\
+      maka anda bisa langsung mendaftar menjadi agent resmi maskapai, untuk \r\nmenjadi\
+      \ agent resmi maskapai penerbangan memang membutuhkan modal yang \r\ncukup besar\
+      \ dan biasanya maskapai meminta profi perusahaan yang sudh \r\nberbadan hukum\
+      \ berupa CV atau PT. Untuk mengurus administrasinya memang \r\ndibutuhkan waktu\
+      \ yang cukup panjang karena anda harus mendatngi kantor \r\nperwkilan masing-masing\
+      \ maskapai penerbangan yang ada di kota anda.</p>\r\n<p>Kelebihan menjadi agen\
+      \ resmi maskapai anda akan mendapatkan komisi \r\npenuh dari maskapai tersebut,\
+      \ besarannya berkisar antara 3% sampai 5% \r\ndari harga tiket, besaran komisi\
+      \ tiap maskapai berbeda-beda.</p>\r\n<p>-Untuk anda yang mempunyai modal yang\
+      \ tidak terlalu besar, anda bisa \r\nmemilih vendor yang menawarkan sistem reservasi\
+      \ tiket pesawat, banyak \r\nvendor yang menyediakan aplikasi reservasi tiket\
+      \ pesawat dengan berbagai\r\n fitur dan harga dengan kisaranRp. 3 Juta sampai\
+      \ Rp.10 Juta.</p>\r\n<p><strong>Lokasi</strong></p>\r\n<p>Lokasi dalam tiap\
+      \ usaha sangatlah penting, untuk usaha penjualan \r\ntiket peswat ada beberapa\
+      \ hal yang harus anda pertimbangkan, berikut \r\nadalah hal-hal yang harus anda\
+      \ pertimbangkan untuk memilih lokasi usaha \r\npenjualan tiket pesawat:</p>\r\
+      \n<p>- Pilihlah lokasi di pemukiman yang padat dan mayoritas adalah kalangan\
+      \ menengah-menengah atas.</p>\r\n<p>-Daerah perkantoran juga lokasi yang patut\
+      \ dipertimbangkan.</p>\r\n<p>-Lokasi ditempat keramaian seperti dekat pasar\
+      \ juga patut dipertimbangkan.</p>\r\n<p>-Daerah yang jauh dari bandar udara\
+      \ juga mempunyai nilai tersendiri.</p>\r\n<p><strong>Marketing</strong></p>\r\
+      \n<p>Zaman yang semakin canggih menuntut kita untuk lebih kreatif dalam \r\n\
+      melakukan pemasaran, selain pemasaran offline pemasaran di dunia maya \r\npatut\
+      \ juga diperhitungkan, promosikan jasa anda di media sosial seperti \r\nFacebook,Twitter,Youtube\
+      \ dan jejaring sosial lainnya.</p>\r\n<p>Memiliki sebuah website juga patut\
+      \ diperhitungkan untuk menggaet pelanggan dari daerah lain.</p>\r\n<p>Demikian\
+      \ pembahasan singkat kami tentang usaha penjualan tiket pesawat, semoga bermanfaat\
+      \ untuk kita semua.</p></p>"
+    creator: 1
+    excerpt: "<p>Untuk anda yang mempunyai modal yang tidak terlalu besar, anda bisa\
+      \ \r\nmemilih vendor yang menawarkan sistem reservasi tiket pesawat, banyak\
+      \ \r\nvendor yang menyediakan aplikasi reservasi tiket pesawat dengan berbagai\r\
+      \n fitur dan harga dengan kisaranRp. 3 Juta sampai Rp.10 Juta.<br></p>"
+    files: []
+    status: '1'
+    tags: [10]
+    title: Tips Untuk Usaha Penjualan Tiket Pesawat
+  model: umkm.article
+  pk: 4
+- fields:
+    category: 8
+    content: "<p>Program Gerakan Kewirausahaan Nasional(GKN) dari Kementrian Koperasi\
+      \ \r\ndan UKM(Kemenkop)&nbsp; sangat ditunggu oleh masyarakat. Program rutin\
+      \ \r\ntahunan dari Kemenkop ini adalah bentuk usaha pemerintah dalam \r\nmeningkatkan\
+      \ jumlah pengusaha di Indonesia dan membuka lapangan \r\npekerjaan baru, Dalam\
+      \ kegiatan ini setiap peserta yang lolos akan \r\nmendapatkan bantuan hibah\
+      \ modal usaha hingga Rp.25 Juta.\r\n<p>GKN 2014 sudah diresmikan oleh presiden\
+      \ Susilo Bambang Yudhoyono Pada\r\n 15 Januari 2014 , namun sampai saat ini\
+      \ (27/03/2014) tidak ada \r\ninformasi yang pasti tentang program ini. Hari\
+      \ ini ForumUKM.com&nbsp; sudah \r\nmencoba mencari informasi ke Dinas Koperasi\
+      \ dan UMKM Provinsi Sumatera \r\nBarat dengan menghubungi via telpon(27/03/2014)(09.15),\
+      \ namun kami \r\nkurang puas dengan jawaban dari staff tersebut yang mengatakan\
+      \ belum \r\nbisa memberi jawaban karena staff yang menangani hal tersebut sedang\
+      \ \r\nkeluar, kami mencoba bertanya apakah sudah ada kabar tentang GKN 2014\
+      \ \r\ntapi telepon tiba-tiba terputus .</p>\r\n<p>Bulan lalu kami juga sudah\
+      \ mencoba mencari informasi dengan \r\nmenghubungi call center Kemenkop, CS\
+      \ tersebut mengatakan bahwa program \r\nGKN 2014 dilaksanakan di tiap provinsi,\
+      \ untuk informasi selengkapnya \r\nsilahkan hubungi dinas setempat, tanpa pikir\
+      \ panjang kami langsung \r\nmenghubungi Dinas Koperasi dan UMKM Provinsi Sumatera\
+      \ Barat dan menurut \r\npihak terkait belum ada informasi tersebut dari pusat.</p>\r\
+      \n<p>Pelaksanaan GKN tahun ini memang sangat berbeda sekali dengan \r\ntahun-tahun\
+      \ sebelumnya,kalau tahun lalu banyak informasi terbaru tentang\r\n pelaksanaan\
+      \ program ini kita dapatkan diberbagai media bahkan ada \r\niklannya juga di\
+      \ televisi. Berbagai penilaian negatif&nbsp; muncul dari \r\nmasyarakat seperti\
+      \ yang disampaikan oleh pemilik akun Facebook Irsal \r\nMaulana salim yang menulis\
+      \ \u201Ckok gak ada info tentang GKN 2014?\u201D <a href=\"https://www.facebook.com/spiritgkncom/posts/647349055330051\"\
+      >di panfage</a> Spirit GKN.</p>\r\n<p>Ketidakjelasan dan simpangsiurnya informasi\
+      \ ini membuat masyarakat \r\nbingung dengan kelanjutan program ini dan tudingan-tudingan\
+      \ negatifpun \r\nmulai muncul dimesia sosial, mudah-mudahan program GKN 2014\
+      \ ini dapat \r\nsegera direalisasikan oleh pihak terkait dengan sebaik-baiknya\
+      \ agar \r\ntercipta pengusaha-pengusaha baru dan membantu pengusaha baru yang\
+      \ \r\nsedang kendala dalam permodalan.</p></p>"
+    creator: 1
+    excerpt: "<p>Bulan lalu kami juga sudah mencoba mencari informasi dengan \r\n\
+      menghubungi call center Kemenkop, CS tersebut mengatakan bahwa program \r\n\
+      GKN 2014 dilaksanakan di tiap provinsi, untuk informasi selengkapnya \r\nsilahkan\
+      \ hubungi dinas setempat, tanpa pikir panjang kami langsung \r\nmenghubungi\
+      \ Dinas Koperasi dan UMKM Provinsi Sumatera Barat dan menurut \r\npihak terkait\
+      \ belum ada informasi tersebut dari pusat.<br></p>"
+    files: []
+    status: '1'
+    tags: [10]
+    title: Minimnya Informasi Tentang Program GKN 2014
+  model: umkm.article
+  pk: 5
+- fields:
+    category: 4
+    content: "<p>Prestashop adalah CMS Opensource yang banyak digunakan untuk membuat\
+      \ \r\nsebuah toko online, di Indonesia juga sangat banyak yang menggunakan CMS\r\
+      \n gratisan ini, mulai dari perseorangan maupun perusahaan.\r\n<p>Sejak awal\
+      \ kemunculannya Prestashop mampu menarik perhatian karena \r\nfiturnya yang\
+      \ berlimpah, sekarang prestashop versi 1.6 sudah dirilis \r\ndengan kelebihan\
+      \ dan fitur terbarunya, berikut keunggulan dan fitur \r\nterbaru dari prestashop\
+      \ 1.6 :</p>\r\n<p>1.Theme Baru</p><p>Prestashop 1.6 hadir dengan themes baru\
+      \ yang sangat berbeda daripada \r\nversi sebelumnye, themes prestashop terbaru\
+      \ ini tampak lebih elegan dan \r\nsimple, themes ini juga dilengkapi dengan\
+      \ slider yang menarik \r\n</p><p>2.Themes Prestashop Responsive.</p>\r\n<p></p><p>Pengguna\
+      \ mobile meningkat pesat, pengembang prestashop membuat themes\r\n bawaan yang\
+      \ sangat responsif sehingga memudahkan pengunjung yang \r\nmengakses dari perangkat\
+      \ mobile.</p>\r\n<p>3.Tampilan baru halaman admin prestashop 1.6</p><p>Perubahan\
+      \ cukup mendasar terdapat pada tampilan halaman back end atau\r\n halaman admin\
+      \ prestashop terbaru ini, kalau dalam versi sebelumnya menu\r\n di halaman admin\
+      \ terletak diatas tapi sekarang pada versi ini menu&nbsp; \r\nterletak di samping\
+      \ kiri, mirip dengan halaman dashboard di WordPress. \r\nPengembang prestashop\
+      \ mengklaim tampilan baru ini akan lebih mudah \r\ndipahami dan digunakan, halaman\
+      \ admin ini responsif sehingga memudahkan \r\nuntuk mengelola toko online anda,dimana\
+      \ saja dan kapan saja.</p>\r\n<p>Kelebihan dan fitur terbaru ini tentu sangat\
+      \ bermanfaat bagi anda \r\nyang membangun website toko online, masih banyak\
+      \ kelebihandari \r\nprestashop terbaru ini,untuk selengkapnya anda bisa membuka\
+      \ website \r\nresminya www.prestashop.com</p></p>"
+    creator: 1
+    excerpt: "<p>Perubahan cukup mendasar terdapat pada tampilan halaman back end\
+      \ atau\r\n halaman admin prestashop terbaru ini, kalau dalam versi sebelumnya\
+      \ menu\r\n di halaman admin terletak diatas tapi sekarang pada versi ini menu&nbsp;\
+      \ \r\nterletak di samping kiri, mirip dengan halaman dashboard di WordPress.\
+      \ \r\nPengembang prestashop mengklaim tampilan baru ini akan lebih mudah \r\n\
+      dipahami dan digunakan, halaman admin ini responsif sehingga memudahkan \r\n\
+      untuk mengelola toko online anda,dimana saja dan kapan saja.<br></p>"
+    files: []
+    status: '1'
+    tags: [2]
+    title: Kelebihan dan Fitur Prestashop 1.6 Untuk Toko Online
+  model: umkm.article
+  pk: 6
+- fields: {answer: null, article: 6, content: <p>Artikel yang cukup bagus<br></p>,
+    owner: 1, question: null, type: A}
+  model: umkm.comment
+  pk: 2
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-16 11:56:41+00:00', change_message: '',
+    content_type: 19, object_id: '1', object_repr: Pelatihan Django, user: 1}
+  model: admin.logentry
+  pk: 1
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-18 13:48:25+00:00', change_message: '',
+    content_type: 11, object_id: '1', object_repr: Gambar Pocong, user: 1}
+  model: admin.logentry
+  pk: 2
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-20 00:37:51+00:00', change_message: '',
+    content_type: 8, object_id: '1', object_repr: Baru, user: 1}
+  model: admin.logentry
+  pk: 3
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-20 00:37:53+00:00', change_message: '',
+    content_type: 18, object_id: '1', object_repr: Article object, user: 1}
+  model: admin.logentry
+  pk: 4
+- fields: {action_flag: 2, action_time: !!timestamp '2014-06-25 01:50:16+00:00', change_message: Added
+      Komentar "Comment object"., content_type: 18, object_id: '1', object_repr: ArticleRO
+      object, user: 1}
+  model: admin.logentry
+  pk: 5
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-25 08:59:40+00:00', change_message: '',
+    content_type: 10, object_id: '1', object_repr: baru baru, user: 1}
+  model: admin.logentry
+  pk: 6
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-25 08:59:44+00:00', change_message: '',
+    content_type: 15, object_id: '1', object_repr: Question object, user: 1}
+  model: admin.logentry
+  pk: 7
+- fields: {action_flag: 2, action_time: !!timestamp '2014-06-25 10:26:30+00:00', change_message: Added
+      Jawaban "Answer object"., content_type: 15, object_id: '1', object_repr: QuestionRO
+      object, user: 1}
+  model: admin.logentry
+  pk: 8
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 10:46:42+00:00', change_message: '',
+    content_type: 11, object_id: '1', object_repr: Anakku, user: 1}
+  model: admin.logentry
+  pk: 9
+- fields: {action_flag: 3, action_time: !!timestamp '2014-06-26 10:54:07+00:00', change_message: '',
+    content_type: 11, object_id: '1', object_repr: Anakku, user: 1}
+  model: admin.logentry
+  pk: 10
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 10:55:46+00:00', change_message: '',
+    content_type: 11, object_id: '2', object_repr: asdfsadf, user: 1}
+  model: admin.logentry
+  pk: 11
+- fields: {action_flag: 3, action_time: !!timestamp '2014-06-26 10:56:10+00:00', change_message: '',
+    content_type: 11, object_id: '2', object_repr: asdfsadf, user: 1}
+  model: admin.logentry
+  pk: 12
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 10:59:01+00:00', change_message: '',
+    content_type: 11, object_id: '3', object_repr: tyutyurt, user: 1}
+  model: admin.logentry
+  pk: 13
+- fields: {action_flag: 3, action_time: !!timestamp '2014-06-26 11:10:45+00:00', change_message: '',
+    content_type: 11, object_id: '3', object_repr: tyutyurt, user: 1}
+  model: admin.logentry
+  pk: 14
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:10:56+00:00', change_message: '',
+    content_type: 11, object_id: '4', object_repr: asdfsdf, user: 1}
+  model: admin.logentry
+  pk: 15
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:21:20+00:00', change_message: '',
+    content_type: 11, object_id: '5', object_repr: a3rtert, user: 1}
+  model: admin.logentry
+  pk: 16
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:26:56+00:00', change_message: '',
+    content_type: 8, object_id: '7', object_repr: Fotografi, user: 1}
+  model: admin.logentry
+  pk: 17
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:27:11+00:00', change_message: '',
+    content_type: 10, object_id: '8', object_repr: foto, user: 1}
+  model: admin.logentry
+  pk: 18
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:27:20+00:00', change_message: '',
+    content_type: 10, object_id: '9', object_repr: cetak, user: 1}
+  model: admin.logentry
+  pk: 19
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:30:40+00:00', change_message: '',
+    content_type: 18, object_id: '1', object_repr: Peluang Usaha Fotografi dan Estimasi
+      Pendapatannya, user: 1}
+  model: admin.logentry
+  pk: 20
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:32:04+00:00', change_message: '',
+    content_type: 8, object_id: '8', object_repr: Bisnis, user: 1}
+  model: admin.logentry
+  pk: 21
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:32:21+00:00', change_message: '',
+    content_type: 10, object_id: '10', object_repr: Bisnis Umum, user: 1}
+  model: admin.logentry
+  pk: 22
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:32:23+00:00', change_message: '',
+    content_type: 18, object_id: '2', object_repr: Tips Disiplin Dalam Berwirausaha,
+    user: 1}
+  model: admin.logentry
+  pk: 23
+- fields: {action_flag: 2, action_time: !!timestamp '2014-06-26 11:33:06+00:00', change_message: Changed
+      status., content_type: 18, object_id: '2', object_repr: Tips Disiplin Dalam
+      Berwirausaha, user: 1}
+  model: admin.logentry
+  pk: 24
+- fields: {action_flag: 2, action_time: !!timestamp '2014-06-26 11:33:13+00:00', change_message: Changed
+      status., content_type: 18, object_id: '1', object_repr: Peluang Usaha Fotografi
+      dan Estimasi Pendapatannya, user: 1}
+  model: admin.logentry
+  pk: 25
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:34:27+00:00', change_message: '',
+    content_type: 18, object_id: '3', object_repr: Kisah Sukses H.Bustaman Membangun
+      Rumah Makan Sederhana, user: 1}
+  model: admin.logentry
+  pk: 26
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:35:33+00:00', change_message: '',
+    content_type: 8, object_id: '9', object_repr: Ticketing, user: 1}
+  model: admin.logentry
+  pk: 27
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:35:44+00:00', change_message: '',
+    content_type: 18, object_id: '4', object_repr: Tips Untuk Usaha Penjualan Tiket
+      Pesawat, user: 1}
+  model: admin.logentry
+  pk: 28
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:36:38+00:00', change_message: '',
+    content_type: 18, object_id: '5', object_repr: Minimnya Informasi Tentang Program
+      GKN 2014, user: 1}
+  model: admin.logentry
+  pk: 29
+- fields: {action_flag: 1, action_time: !!timestamp '2014-06-26 11:37:31+00:00', change_message: '',
+    content_type: 18, object_id: '6', object_repr: Kelebihan dan Fitur Prestashop
+      1.6 Untuk Toko Online, user: 1}
+  model: admin.logentry
+  pk: 30
+- fields: {action_flag: 2, action_time: !!timestamp '2014-06-26 11:43:19+00:00', change_message: Added
+      Komentar "<p>Artikel yang cukup bagus<br></p>"., content_type: 18, object_id: '6',
+    object_repr: Kelebihan dan Fitur Prestashop 1.6 Untuk Toko Online, user: 1}
+  model: admin.logentry
+  pk: 31
+- fields: {action_flag: 3, action_time: !!timestamp '2014-06-26 12:26:45+00:00', change_message: '',
+    content_type: 11, object_id: '5', object_repr: a3rtert, user: 1}
+  model: admin.logentry
+  pk: 32
+- fields: {action_flag: 3, action_time: !!timestamp '2014-06-26 12:26:45+00:00', change_message: '',
+    content_type: 11, object_id: '4', object_repr: asdfsdf, user: 1}
+  model: admin.logentry
+  pk: 33

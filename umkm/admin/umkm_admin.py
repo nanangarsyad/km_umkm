@@ -28,13 +28,13 @@ class ArticleAdmin(admin.ModelAdmin):
         ('Post Content',
          {
              'classes': 'full-width',
-             'fields': ('title', 'content', 'excerpt', 'category', 'tags', 'status')
+             'fields': ('creator', 'title', 'content', 'excerpt', 'category', 'tags', 'status')
          })
     ]
 
-    def save_model(self, request, obj, form, change):
-        obj.creator = request.user
-        obj.save()
+    # def save_model(self, request, obj, form, change):
+    #     obj.creator = request.user
+    #     obj.save()
 
 
 class CommentAdmin(admin.ModelAdmin):
@@ -46,8 +46,16 @@ class QuestionAdmin(admin.ModelAdmin):
     form = KnowledgeForm
 
 
+class AnswerForm(ModelForm):
+    class Meta:
+        widgets = {
+            'content': RedactorWidget(editor_options={'lang': 'en'}),
+        }
+
+
 class AnswerAdmin(admin.ModelAdmin):
-    list_display = ['content', 'votes', 'question', 'owner', 'status']
+    list_display = ['__unicode__', 'votes', 'question', 'owner', 'status']
+    form = AnswerForm
 
 
 class MediaAdmin(admin.ModelAdmin):
@@ -58,6 +66,38 @@ class TrainingAdmin(admin.ModelAdmin):
     list_display = ['topic', 'start_date', 'end_date', 'venue', 'organizer', 'training_type']
 
 
+class ProfileForm(ModelForm):
+    class Meta:
+        widgets = {
+            'instance_desc': RedactorWidget(editor_options={'lang': 'en'}),
+        }
+
+
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ['user', 'user_type', 'address', 'instance_name']
+    form = ProfileForm
+    # fieldsets = [
+    #     ('Deskripsi Profil',
+    #      {
+    #          'classes': 'full-width',
+    #          'fields': ('user', 'user_type', 'address', 'instance_name', 'instance_desc')
+    #      })
+    # ]
+
+
+class ProductForm(ModelForm):
+    class Meta:
+        widgets = {
+            'description': RedactorWidget(editor_options={'lang': 'en'}),
+            'excerpt': RedactorWidget(editor_options={
+                'buttons': ['html', '|', 'bold', 'italic']})
+        }
+
+
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['name', 'status', 'owner', 'category']
+    form = ProductForm
+
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Tag, TagAdmin)
 admin.site.register(Article, ArticleAdmin)
@@ -66,3 +106,5 @@ admin.site.register(Training, TrainingAdmin)
 admin.site.register(Media, MediaAdmin)
 admin.site.register(Answer, AnswerAdmin)
 admin.site.register(Comment, CommentAdmin)
+admin.site.register(Profile, ProfileAdmin)
+admin.site.register(Product, ProductAdmin)

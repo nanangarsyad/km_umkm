@@ -1,7 +1,7 @@
 from umkm.models.media import *
 from django.contrib.auth.models import User
 from umkm.utility import *
-
+from django.utils.html import *
 
 class ArticleManager(models.Manager):
 
@@ -92,8 +92,11 @@ class Answer(models.Model):
         verbose_name = 'Jawaban'
         app_label = string_with_title("umkm", "Administrasi Pengetahuan")
 
+    def content_excerpt(self):
+        return strip_tags(self.content)[0:70]+"..."
+
     def __unicode__(self):
-        return self.content
+        return self.content_excerpt()
 
 
 class Comment(models.Model):

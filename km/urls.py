@@ -27,6 +27,6 @@ urlpatterns += patterns('umkm.views',
         url(r'^backend/articles/$', 'article_adm'),
         url(r'^backend/article/(?P<quest_id>\d+)/$', 'article_show'),
         url(r'^backend/quests/$', 'question_adm'),
-        url(r'^backend/quest/(?P<quest_id>\d+)/', 'question_quest'),
+        url(r'^backend/quest/(?P<quest_id>\d+)/', 'question_show'),
         url(r'^login/$', 'login'),
 )
