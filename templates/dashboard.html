@@ -1,5 +1,26 @@
 {% extends 'backend-base.html' %}
 
+{% block menupinggir %}
+<ul id="dashboard-menu" class="nav nav-list">
+    {% for tag in tags %}
+    <li class="active ">
+        <a rel="tooltip" data-placement="right" data-original-title="Dashboard" href="index.html">
+            <span class="caption">{{tag.main}}</span>
+        </a>
+    </li>
+        {% if tag.sub %}
+            {% for sub in tag.sub %}
+            <li class="active ">
+                <a rel="tooltip" data-placement="right" data-original-title="Dashboard" href="index.html">
+                    <span class="caption">>> {{sub}}</span>
+                </a>
+            </li>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}
+
 {% block content_block %}
 <div class="row">
     <div class="col-sm-8 main-content">

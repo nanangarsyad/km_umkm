@@ -1,5 +1,17 @@
 {% extends 'backend-base.html' %}
 {% load static %}
+
+{% block menupinggir %}
+<ul id="dashboard-menu" class="nav nav-list">
+    {% for tag in tags %}
+    <li class="active ">
+        <a rel="tooltip" data-placement="right" data-original-title="Dashboard" href="index.html">
+            <span class="caption">{{tag}}</span></a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
 {% block content_block %}
 <div class="row">
     <div class="col-sm-9">

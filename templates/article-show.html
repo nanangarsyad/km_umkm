@@ -1,5 +1,15 @@
 {% extends 'backend-base.html' %}
 {% load static %}
+
+{% block menupinggir %}
+    {% for tag in tags %}
+    <a href="#">
+    <span class="large label category label-info">{{ tag }}</span>
+    </a>
+    {% endfor %}
+{% endblock %}
+
+
 {% block content_block %}
 <div class="row blog-post">
     <div class="col-sm-9">
@@ -70,7 +80,7 @@
           </form>
     </div>
 
-    <div class="col-sm-3 sidebar well blog-sidebar">
+    <div class="col-sm-3 menupinggir well blog-menupinggir">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search...">
             <span class="input-group-btn">
